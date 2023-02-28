@@ -1,0 +1,968 @@
+<<Comandos e Informações "PHP Básico">>
+
+✦Índice das Informações✦
+▷
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Aula: O que JavaScrip é capaz de fazer? [A]
+
+01- bla bla bla 
+
+
+
+
+
+
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Aula: Como chegamos aqui? [A]
+
+02- bla bla bla 
+
+
+
+
+
+
+
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Dando os primeiros passos [A]
+
+03- Comando para sair do NodeJS [.exit]
+
+
+
+
+
+
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Criando o seu primeiro script [A]
+
+04- Comando para envair uma mensagem para página do cliente 
+[window.alert('OI!')]
+
+05- Comando para envair uma confirmação para página do cliente 
+[window.confirm('Tudo bem?')]
+
+06- Comando para envair uma uma caixa de pergunta para página do cliente 
+[window.prompt('Seu nome')]
+
+
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Tratamento de dados [B]
+
+07- regras que os Identificadores devem seguir 
+[
+
+⚫ Podem começar com
+letra, $ ou • 
+
+⚫ Não podem começar com números
+
+⚫É possível usar letras ou números
+
+⚫É possível usar acentos e símbolos
+
+⚫ Não podem conter espaços
+
+⚫Não podem ser palavras reservadas
+
+]
+
+08- Como acessar o nodejs pelo Visual Code 
+[Basta ir "terminal" no canto superior da página e clicar 
+em "novo terminal" ou usar o atalho Ctrl + Shift + ',
+dentro do terminal use o comando node. Para poder sair do nonde usa-se o comando 
+".exit" e para fechar o terminal é "exit"]
+
+09- Como criar uma variável/Identidicador no JS 
+[Para isso você deve usar "var" + o nome da variável que você deseja + o seu valor 
+Ex:
+var nome = "João"
+var idade = "19"
+]
+
+10- Comando para limpar a página do terminal/node 
+[Ctrl + l]
+
+11- Dicas de como criar um Identificador 
+[
+Maiúsculas e minúsculas fazem diferença
+
+Tente escolher nomes
+
+coerentes para as
+
+variáveis
+
+Evite se tornar um 'programador alfabeto' ou um 'programador contador'
+]
+
+12- Comando para identificar qual o tipo da variável 
+[
+typeof
+Ex:
+>var x = '19'
+underfined
+
+>typeof x
+'numer' 
+]
+
+13- (Historico)Comando para reescrever o que já havia sido escrito em outra linha
+[Basta usar as setinhas do teclado]
+
+14-  Tipos de variáveis existentes (basicos)
+[
+*- number
+*- string
+*- boolean/boleano
+
+OBS: caso seja usado aspas na variável que inicialmente era dormada apenas por 
+númerios se tornará uma stringer
+]
+
+
+
+
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Tratamento de dados
+
+
+14- Comando para duplicar arquivos nos Visul Code
+[Ctrl + C e Ctrl + V no arquivo da pasta que você deseja duplicar]
+
+15- Concatenação 
+[relacionamento de ideias, fatos ou coisas entre si; ligação, encadeamento. Para 
+realizramos esta ação no JS nos usamos o sinal de soma (+)
+Ex:
+<script>
+        var nome = window.prompt('Seu nome')
+        window.alert('è um prazer te conhecer!' + nome)
+</script>
+]
+
+16- Dica sobre o símbolo de soma (+)
+[Como a línguagem vai saber quando se deve usar o símbolo de soma (+) para somar
+e para qunado deve concatenar?
+Simples, caso as variáveis sejam do tipo (typeof) number/número ele irá somar 
+e caso seja stringer e bollean ele vai concatenar, porém toda vez que você utiliza 
+o comando prompt você torna a variável uma stringer idependente se for apeans um 
+número, para poder resolver este problema você deve usar o comando: 
+Number.parseInt (Caso seja um número inteiro
+Number.parseFlow (CAso seja um número com ponto / Ex: 5.5
+OBS: a letra de "number" sempre deve estar em maiúculo, caso o contrário o comnado
+não funncionará]
+
+
+17- Como transforma uma variável stringer em number
+[
+number.parseInt (Caso seja um número inteiro
+number.parseFlow (CAso seja um número com ponto / Ex: 5.5]
+Ex:
+	var n1 = Number.parseInt (window.prompt('Digite um número'))
+	var n2 = Number.parseInt (window.prompt('Digite outro número'))
+] 
+
+18- Comomando apeanas number
+[Ele faz com que a própria linguagem alterne entre parseInt e parseFlot sem 
+que você precise setar um ou outro
+Ex:
+var n1 = Number (window.prompt('Digite um número'))
+]
+
+
+19- Comando para transforma um tipo de number para stringer 
+[Comando: string(x), o valor dentro do parentes é o nome da variável
+Ex:
+	window.alert ('A soma dos dois valores ' + String(s))
+]
+
+20- Dicas 
+[
+No node você não precisa escreve var quando cria uma variável, basta eescreve o
+nome da variável e adiciona um valo a ela
+Ao invés de usar o comando de concatenar com o símbolo de soma dá para usar o
+símbolo de cifrão
+EX:
+'O aluno ' + nome + ' com ' + idade"
+`O aluno ${nome} com ${idade}`
+OBS: cada um utilizar uma aspas diferente
+]
+
+21- Você pode usar Tags HTML no JS
+
+22- Comando para escrever na página com JS (Como se fosse HTML)
+[Comando: document.write
+Ex:
+	document.write(`Seu nome <strong>${nome}</strong> com letras maiúsculas fica assim ${nome.toUpperCase()}	
+]
+
+23- Comando para defini quantas casa depois do ponto/virgula usar 
+[Comando: .toFixed(x) dentro do parentes fica a quantidade de casas que deseja
+Ex:
+> n1 = 133.3
+133.3
+> n1.toFixed(2)
+'133.30'
+]
+
+24- Comando para aletrar um item pelo outro 
+[Comando: .replace('x', 'x')Dentro do parentes ficará o item antigo que você 
+deseja troca para o novo
+Ex:
+> n1.toFixed(2).replace('.', ',')
+'133,30'
+> n1.toFixed(2).replace(',', '.')
+'133.30'
+]
+ 
+25- Comando para alterar
+[> n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+'R$ 133,30'
+OBS: n1 é o nome da variável criada e currency significa moeda em português]
+
+26- Comando para alterar o texto entre letras maiúculas e minusculas
+[
+Maiúsculo: toUpperCase
+Minusculo: toLowerCase
+Ex:
+	document.write(`Seu nome <strong>${nome}</strong> com letras maiúsculas fica assim ${nome.toUpperCase()} <br/>`)
+        document.write(`Seu nome <strong>${nome}</strong> com letras mainúscuas fica assim ${nome.toLowerCase()} <br/>`)
+
+27- Comadno para contar as letras de uma variável
+[Comando: length
+Ex:
+document.write(`Seu nome é <strong> ${nome} </strong> e seu nome tem ${nome.length} letras <br/>`)
+]
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Avançar: Operadores [B] 
+
+26- Operadores básicos
+[
+aritméticos
+
+atribuição
+
+relacionais
+
+lógicos
+
+ternário
+]
+
+27- Operadores Aritméticos
+[Eles possuem a função de realizar os calculos ( +, -, *, /, %, **)
+O símbolo de % serve para calcular o resto da divisão e não porcentagem, ex:
+5 % 2 = 1, porque 5 dividido por dois é 2.5, porém como eu havia dito o resultado
+será o valor do resto da divisão, em outras palavras, o resultado desse calculo 
+para o JS será 1 
+5|2
+――― ]
+1|2
+
+
+28- Símbolo **
+[Ele é a potencia
+Ex:
+5**2 = 25
+5**5 = 125
+]
+
+29- Atribuição Simples Ex:
+[
+var a= 5+3 8
+
+var b= a%5 3
+
+var c= 5*b**2 45
+
+var d= 10-a/2 6
+
+var e= 6*2/d 2
+
+var f= b%e+4/e 3
+]
+
+29- Auto-atribuição
+[
+var n=3
+
+n = n+4
+
+n = n-5
+
+n = n*4
+
+n = n/2
+
+n= n**2 
+
+n= n%5 1
+
+Obs: O valo da variável n vai se alterando de acordo com o que se é solicitado
+
+Forma simplificada:
+
+n += 4
+
+n -=5
+
+n *= 4
+
+n /= 2
+
+n **= 2
+
+n %= 5
+
+Obs: não é possível retribuir um valor para a variável usando outra variável 
+ex de como não fazer:
+n = x+2
+]
+
+30- Incremento 
+[ auto-atribuição
+var n=3
+
+n = n+4
+
+n = n-5
+
+Forma simplificada:
+
+n += 4
+
+n -=5
+
+Incremento 
+
+n++
+
+n--
+
+Obs: o ++ irá somar o valor de 1 ao resultando, enquanto o -- irá subtrair o valor 
+1 ao resultado
+Ex:
+n = 10
+underfined
+
+n++
+11
+
+n--
+10
+]
+ 
+31- Relacionnais 
+[
+5 > 2 True
+
+7 < 4 False
+
+8 >= 8 true
+
+9 <=7 False
+
+5 == 5 True
+
+4 ! 4 False 
+]
+
+32- Operador de igualdade restrita (Operador de identidade)
+[Enquanto o operador de igualdade básico (==) leva apeans em considerção a 
+grandeza dos valores, a de igualdade restrita leva em consideração também o seu tipo
+Ex:
+5 == 5 True
+
+5 == '5' True
+
+5 === '5' False
+]
+
+33- Situação bizzara 
+[
+> x = 5
+5
+> y = '5'
+'5'
+> x == y
+true
+> x !== y
+true
+
+Obs: o operador !== é o oposto do === ele irá conferir o tipo da variável e não o
+seu valo/grandeza
+]
+
+34- Operadores lógicos
+[
+Ordem de execução:
+! Negação (Não)
+True !  False
+False !  True
+
+&& Conjunção (E)
+True && True  True
+True && False  False
+False && True  False
+False && False  False
+
+|| disjunção (Ou)
+True && True  True
+True && False  True
+False && True  True
+False && False  False
+]
+
+35- Operadores Ternários
+[
+?
+:
+Ex: 
+>>   media = 7
+7
+> media > 6 ? 'aprovado' : 'reprovado'
+'aprovado'
+>
+
+Another Ex:
+> x = 8
+8
+> result = x % 2 == 0 ? 5 : 2
+5
+> x
+8
+> result
+5
+
+Obs: Os operadores Ternarios sempre são os ultimos as seres realizados 
+]
+
+36- Ordem de precedência
+[
+Operadores aritméticos
+() aqueles que estivem dentro de parentes
+** potencia
+/ e * divis/ao e multiplicação
++ e - soma e subtração
+
+Operadores Relacionais 
+>, <, >=, ... 
+Eles não possuem uma ordem
+
+Operadores lógicos 
+! Negação (Não)
+&& Conjunção (E)
+|| ou (Ou)
+]
+
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Introdução ao DOM [C]
+
+37- O que é DOM?
+
+[DOM (Document Object Model), Modelo de Objeto para Documento, é uma *INTERFACE 
+padronizada utilizada para REPRESENTAR um DOCUMENTO HTML. Este modelo utiliza uma 
+linguagem neutra que, por meio de uma árvore hierárquica de diretórios, permite 
+você ACESSAR e INTERAGIR com QUALQUER ELEMENTO de seu DOCUMENTO de maneira DINÂMICA 
+com o uso do JavaScript. Desta forma, o JS tem o poder de:
+
+alterar, excluir e adicionar: elementos HTML, atributos HTML, eventos HTML, estilos 
+CSS.
+
+*Interface, do latim INTER(entre) + FACIES(faces), significa: ligação física ou 
+lógica entre 2 sistemas ou partes que não poderiam ser conectados diretamente.
+
+Ou seja, o DOM é o INTERMEDIADOR da COMUNICAÇÃO da linguagem JavaScript com as 
+tecnologias HTML5 e CSS3]
+
+38- Ilustração de uma árvore DOM:
+[
+                     window
+               /        |       \
+	    location document history
+                       |
+                      html
+                    /   \
+                 head     body
+           /  |         / |  | \
+          meta title  h1 p p div
+                           |
+                         strong
+
+Parent (pai)  - é quem está ACIMA na árvore HIERARQUICA.
+Child (filho) - é quem está ABAIXO na árvore HIERARQUICA.
+É como se fosse uma árvore genealógica. Exemplos:
+HEAD e BODY são FILHOS de HTML;
+HTML é PAI de HEAD e BODY;
+HTML é FILHO de DOCUMENT.
+
+]
+
+39- O DOOM e o Arquivo HTML estão interligados
+
+[É importante ressaltar que: um DOCUMENTO HTML e sua REPRESENTAÇÃO DOM são a MESMA 
+COISA. A única diferença é que estes estão REPRESENTADOS de FORMAS DIFERENTES. 
+Ex:
+("uma garrafa") e ("a bottle") são a MESMA COISA, só que representadas em línguas 
+diferentes. É a mesma ideia. Caso você altere o DOCUMENTO HTML você também alterará 
+o seu DOM e vice-versa]
+
+
+40- Como ACESSAR/SELECIONAR ELEMENTOS através do DOM:
+[          Lista de 5 MÉTODOS de acesso:
+
+by Tag         - getElementsByTagName("")
+by ID            - getElementByID("")
+by Name     - getElementsByName("")
+by Class      - getElementsByClassName("")
+by Selector - querySelector (""); querySelectorAll ("");
+
+
+Lucas Leal
+há 1 mês (editado)
+NOVIDADES:
+
+  O que é DOM?
+
+DOM (Document Object Model), Modelo de Objeto para Documento, é uma *INTERFACE padronizada utilizada para REPRESENTAR um DOCUMENTO HTML. Este modelo utiliza uma linguagem neutra que, por meio de uma árvore hierárquica de diretórios, permite você ACESSAR e INTERAGIR com QUALQUER ELEMENTO de seu DOCUMENTO de maneira DINÂMICA com o uso do JavaScript. Desta forma, o JS tem o poder de:
+alterar, excluir e adicionar: elementos HTML, atributos HTML, eventos HTML, estilos CSS.
+*Interface, do latim INTER(entre) + FACIES(faces), significa: ligação física ou lógica entre 2 sistemas ou partes que não poderiam ser conectados diretamente.
+Ou seja, o DOM é o INTERMEDIADOR da COMUNICAÇÃO da linguagem JavaScript com as tecnologias HTML5 e CSS3.
+
+Ilustração de uma árvore DOM:
+                  window
+               /        |       \
+location document history
+                       |
+                   html
+                    /   \
+            head     body
+           /  |         / |  | \
+  meta title  h1 p p div
+                              |
+                         strong
+
+Parent (pai)  - é quem está ACIMA na árvore HIERARQUICA.
+Child (filho) - é quem está ABAIXO na árvore HIERARQUICA.
+É como se fosse uma árvore genealógica. Exemplos:
+HEAD e BODY são FILHOS de HTML;
+HTML é PAI de HEAD e BODY;
+HTML é FILHO de DOCUMENT.
+
+É importante ressaltar que: um DOCUMENTO HTML e sua REPRESENTAÇÃO DOM são a MESMA COISA. A única diferença é que estes estão REPRESENTADOS de FORMAS DIFERENTES. Ex:
+("uma garrafa") e ("a bottle") são a MESMA COISA, só que representadas em línguas diferentes. É a mesma ideia.
+Caso você altere o DOCUMENTO HTML você também alterará o seu DOM e vice-versa.
+____________________________
+
+    Como ACESSAR/SELECIONAR ELEMENTOS através do DOM:
+  Lista de 5 MÉTODOS de acesso:
+by Tag         - getElementsByTagName("")
+by ID            - getElementByID("")
+by Name     - getElementsByName("")
+by Class      - getElementsByClassName("")
+by Selector - querySelector (""); querySelectorAll ("");
+
+O método getElementsByTagName() SELECIONA ELEMENTOS via TAG.
+O método getElementById() SELECIONA UM ELEMENTO via ID.
+O método getElementsByName() SELECIONA ELEMENTOS via NOME.
+O método getElementsByClassName("") SELECIONA ELEMENTOS via CLASSE.
+O método querySelector() SELECIONA UM ELEMENTO via SELETOR CSS.
+O método queySelectorAll() SELECIONA ELEMENTOS via SELETOR CSS.
+
+*Atente-se que alguns dos seletores estão no SINGULAR e outros no PLURAL (Element e Element*S*)
+Caso utilize um seletor que está no PLURAL, para ESPECIFICAR qual TAG, NAME ou CLASS você deseja ACESSAR, você têm que usar, após os parênteses (), os colchetes [] e, dentro destes, você indicará qual a POSIÇÃO do elemento que você deseja ACESSAR.
+Ex da aula:
+document.getElementsByTagName('p')[1];
+Neste exemplo selecionou-se, dentro dos parênteses, todas as tags <p>. E, dentro dos colchetes, selecionou-se a tag <p> que se encontra na 1° POSIÇÃO, ou seja, a 2° tag <p>.
+*Lembrando que a contagem começa em 0. Portanto:
+a posição 0 é a 1° tag <p>
+a posição 1 é a 2° tag <p>
+a posição 2 é a 3° tag <p> ...
+]
+
+41- Diferença entre  .innerText  e  .innerHTML  :
+[
+A propriedade  .innerText  serve para DEFINIR ou RETORNAR o CONTEÚDO de TEXTO de um 
+ELEMENTO.
+
+A propriedade  .innerHTML  serve para DEFINIR ou RETORNAR o CONTEÚDO HTML 
+(texto+formatação) de um ELEMENTO.
+
+42- Você pode alterar a informaçãon do documento HTML via JS 
+[
+Ex:
+<div id="msg">Clique Aqui</div>
+
+msg.innerText = 'Estou aguardando'
+
+Obs: a mensagem que aparecerá será a  innertext (JS) e não a do HTML
+]
+
+43- .querySelector
+[
+Ex:
+var msg = document.querySelector('div#msg')
+        msg.style.background = 'blue'
+]
+
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Eventos DOM
+
+44- A delimitação por símbolos de chaves ({}) é chamada de blocos no JS
+
+45- O que é um EVENTO?
+[
+Um EVENTO é uma CONDIÇÃO que, quando verdadeira, fará a CHAMADA de uma FUNÇÃO.
+
+Exemplos de EVENTOS:
+
+O Evento onmouseenter: serve para executar alguma FUNÇÃO no momento em que o 
+cliente ENTRAR COM O CURSOR DENTRO do elemento.
+
+O Evento onmousemove: serve para executar alguma FUNÇÃO no momento em que o 
+cliente MOVER O CURSOR DENTRO do elemento.
+
+O Evento onmousedown: serve para executar alguma FUNÇÃO no momento em que o 
+cliente PRESSIONAR O CLICK DENTRO do elemento.
+
+O Evento onmouseup: serve para executar alguma FUNÇÃO no momento em que o 
+cliente SOLTAR O CLICK DENTRO do elemento.
+
+O Evento onclick: serve para executar alguma FUNÇÃO no momento em que o 
+cliente CLICAR DENTRO do elemento.
+
+O Evento onmouseout: serve para executar alguma FUNÇÃO no momento em que o 
+cliente SAIR COM O CURSOR DE DENTRO do elemento.
+
+O Evento onmouseover: serve para executar alguma FUNÇÃO enquanto o cliente 
+MANTER O CURSOR SOBRE o elemento.
+]  
+
+46-O que é uma FUNÇÃO?
+[
+Funções são subprogramas que podem RECEBER PARÂMETROS e RETORNAR um RESULTADO. 
+São AÇÕES executadas assim que são CHAMADAS ou em decorrência de algum EVENTO. 
+É um BLOCO de CÓDIGOS projetado para EXECUTAR uma TAREFA ou CALCULAR um VALOR. 
+Syntax:
+function nomeDaFunção (parâmetro1, parâmetro2, parâmetro3...) {bloco de códigos} 
+] 
+
+47- O método  addEventListener()  
+[
+serve para "PLANTAR" uma "ESCUTA" em um ELEMENTO. Esta "escuta" CHAMARÁ uma 
+FUNÇÃO no momento em que o EVENTO, definido como PARÂMETRO, seja VERDADEIRO. 
+Syntax:
+element.addEventListener(event, function, useCapture)
+atenção: no parâmetro EVENT não usa-se o prefixo "on". 
+Use: "click" ao invés de: "onclick".
+]
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Condições (Parte 1)
+
+48- dica
+[
+Para um input ser aceito como uma variável no script (js) tem que haver uma 
+uma variável criada no script "puxando ela" e depois uma outra puxando a variável 
+que foi criada anteriormente com .value 
+EX:
+	var txtn = document.querySelector("input#txtnac");
+        var res = document.querySelector("div#res");
+        var nac = txtn.value;
+EX:
+        var nas = document.querySelector('input#nasc')
+        var res = document.querySelector('div#res')
+        var nasc = String(nas.value)
+]
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Condições (Parte 2) - Curso JavaScript #12
+
+49- Quando usar console.log e document.write
+[
+console.log é usado em uma página html
+document.write é usado em arquivo js
+]
+
+50-  Estrutura Condicional Aninhada: IF/ELSE IF/ELSE (se/senão se/senão)
+[
+Se (if) condição1 for VERDADEIRA, execute o Bloco A.
+Senão (else), se (if) condição2 for VERDADEIRA, execute o Bloco B.
+Senão (else), execute o Bloco C.
+
+  Ilustração:
+if (condição1) {
+Bloco A
+} else if (condição2) {
+Bloco B
+} else {
+Bloco C
+}
+]
+
+51- No exemplo da aula, escolheu-se a variável  DiaSem  como REFERÊNCIA. Esta 
+variável representa o DIA da SEMANA em forma de NÚMERO, onde 0 = domingo; 6 = sábado.
+Depois criou-se um CASO para cada DIA, onde cada um têm seu próprio VALOR, este 
+CAPAZ de ser CORRELACIONADO com algum DIA, e BLOCO de CÓDIGOS.
+Quando a estrutura SWITCH é LIDA, CORRELACIONA-SE o VALOR da EXPRESSÃO (DiaSem) com 
+o VALOR de cada CASO. Aquele CASO que COINCIDIR, terá o seu BLOCO EXECUTADO.
+
+  Ilustração:
+switch(diaSem) {
+    case 0:
+        console.log ('Domingo')
+        break
+    case 1:
+        console.log ('Segunda-feira')
+        break
+    case 2:
+        console.log ('Terça-feira')
+        break
+    case 3:
+        console.log ('Quarta-feira')
+        break
+    case 4:
+        console.log ('Quinta-feira')
+        break
+    case 5:
+        console.log ('Sexta-feira')
+        break
+    case 6:
+        console.log ('Sábado')
+    default:
+        console.log ('[ERRO] - DIA INVÁLIDO')
+}
+
+52- Informções adicionais sobre a estrutura "SWITCH"
+[
+*O  break  serve para QUEBRAR, PARAR a EXECUÇÃO dentro do BLOCO. Caso não utilize-o,
+os PRÓXIMOS CASOS serão EXECUTADOS, mesmo que não haja a correlação do VALOR da 
+EXPRESSÃO com o VALOR do CASO. Isto irá ocorrer até que se encontre um  break.
+Não é NECESSÁRIO utilizar o  break  no ÚLTIMO CASO dado que, por ser o último, 
+este já irá PARAR a EXECUÇÃO de qualquer forma (mas se quiser usar, pode usar, 
+só não irá fazer diferença).
+*O  default:  serve para, se NENHUM dos CASOS SERVIR, executa-se o  default:. 
+Caso o  default:  esteja por ÚLTIMO, também não é necessário pôr o  break. 
+Entretanto, caso esteja, por exemplo, em 1°, é NECESSÁRIO pôr o  break   pois, senão,
+ele irá executar os PRÓXIMOS CASOS até encontrar um  break.
+*A estrutura  switch()  é um pouco limitada pois, no VALOR de cada CASO, só é 
+possível utilizar NÚMEROS INTEIROS e STRINGS.
+]
+
+53- new Date o comando resposável por coletar as informções do computador 
+[
+O Construtor  new Date()  retorna um OBJETO de DATA com: DIA da SEMANA, DATA, 
+HORA ATUAL e FUSO HORÁRIO. 
+Ex: Fri Nov 04 2022 08:30:47 GMT-0300 (Horário Padrão de Brasília)
+
+Por ser um Construtor,  new Date()  permite-nos criar OBJETOS de DATA ESPECÍFICOS 
+A PARTIR DELE. Para fazer isto, primeiramente, para facilitar, guarda-se o 
+new Date()  dentro de uma variável, desta forma
+Ex:
+time = new Date()
+diaSem = time.getDay()
+Obs: as duas palavras antes do símbolod e igual são variáveis que podem assumir 
+qualquer nomeclatura que desejar
+
+comadno para coletar cada tipo de informção decorrente do tempo:  E depois você pode usar algum destes MÉTODOS:
+data.getFullYear()         Retorna o ANO atual (yyyy)
+data.getMonth()	         Retorna o MÊS atual (0-11)
+data.getDate()	         Retorna o DIA atual (1-31)
+data.getDay()	         Retorna o DIA da SEMANA atual como um NÚMERO (0-6)
+Obs: 0 = domingo; 6 = sábado.
+data.getHours()	         Retorna a HORA atual (0-23)
+data.getMinutes()         Retorna os MINUTOS atuais (0-59)
+data.getSeconds()        Retorna os SEGUNDOS atuais (0-59)
+data.getMilliseconds() Retorna os MILISSEGUNDOS atuais (0-999)
+data.getTime()	         Retorna os MILISSEGUNDOS desde o dia 1 de Janeiro de 1970 (WTF? xD)
+] 
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Repetições (Parte 1)
+
+54- Como usar a estrutura: while
+[
+Estruturas de  (Laços || Iterações || Repetições || Looping)  :
+
+  while (enquanto)
+
+Esta estrutura faz o teste lógico ANTES de rodar o programa.
+
+Enquanto (while) condição1 for VERDADEIRA, execute o Bloco A.
+
+Ilustração:
+while (condição1) {
+Bloco A
+}
+
+Ex:
+n = 1
+while (n <= 10) {
+    console.log(`número ${n}`)
+    n++
+}
+] 
+
+55- Como usar a estrutura: do
+[
+do/while (faça/enquanto)
+
+Esta estrutura faz o teste lógico DEPOIS de rodar o programa.
+
+Faça (do) a execução do Bloco A, enquanto (while) condição1 for VERDADEIRA.
+
+Ilustração:
+do {
+Bloco A
+} while (condição1)
+
+Ex:
+n = 1
+do {
+    console.log(`número ${n}`)
+    n++
+} while (n <= 10) 
+]   
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+► Repetições (Parte 2)
+
+56- Como usar a estrutura: for
+[
+determina que uma ação deve ser executada a partir de uma condição inicial até que seja encontrada 
+outra que interrompa o laço. O fluxo de repetição é controlado por uma variável, que é testada a cada 
+repetição até que se encontre a condição de parada.
+
+Ilustração
+for (x1; x2; x3) {
+	x4
+}
+
+x1= é a Inicialização/"variável"
+x2= Teste lógico
+x3= Encremento
+x4= é o bloco que será realizado caso a sentença lógica esteja de acordo e até o momento em que a 
+inicialização após passar pelo encremento ainda seja uma senteça verdadeira para o teste lógico
+
+Ex:
+console.log('Vai começar!')
+for (var n = 1; n <= 5; n++) {
+    console.log(n)
+}
+console.log('Fim!')
+]
+
+57- Depuração/Apuração
+Comando para abrir: F5, nele você poderá utilizar para averiguar o que há de errado com seu 
+código
+
+<<Fim da Aula>>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+►
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

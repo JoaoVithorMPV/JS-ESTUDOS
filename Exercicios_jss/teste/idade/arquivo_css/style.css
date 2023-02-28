@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(184, 127, 127);
+    font: 14pt Arial;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    background: white;
+    border: 5px;
+    border-radius: 10px;
+    width: 450px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#ano {
+    width: 100px;
+    height: 25px;
+    padding: 10px;
+}
+
+#btn {
+    border: none;
+    background: rgba(255, 0, 0, 0.671);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 40px -8px red;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+}

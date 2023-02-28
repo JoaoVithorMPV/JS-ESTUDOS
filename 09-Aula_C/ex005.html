@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: blue;
+            color: aliceblue;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com DOM</h1>
+    <p>Aqui esta o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique Aqui</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        var msg = window.document.getElementById('msg')
+
+        window.document.write('Testando o comando: ' + p1.innerText )
+
+        corpo.style.background = 'black'
+        p1.style.color = 'purple'
+    
+        document.write(`<br/>`)
+        document.write(p2.innerText)
+        document.write(`<br/>`)       
+        document.write(p2.innerHTML)
+
+        msg.style.background = 'red'
+        /*
+        msg.innerText = 'Estou aguardando'
+        window.document.getElementById('msg').innerText = 'Olá'
+        Ambas as fomas resultam em um msesmo resultado, apenas sua 
+        forma de escrita que altera*/
+
+        var msg = document.querySelector('div#msg')
+        msg.style.background = 'blue'
+    </script>
+</body>
+</html>
